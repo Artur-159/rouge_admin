@@ -1,0 +1,46 @@
+.addAdmin {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  .user_name_input {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  .search_info {
+    display: flex;
+    align-items: center;
+    .btn_list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 300px;
+      margin: 20px 0px;
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      position: relative;
+      .search_inp {
+        margin-left: 40px;
+        background-color: white;
+      }
+      .search_icon {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: #1976d2;
+        background-color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.addAdmin {
+  width: 85%;
+}
+
+.activeButton {
+  color: red;
+}

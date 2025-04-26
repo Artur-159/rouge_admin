@@ -1,0 +1,39 @@
+@import "../../mixins";
+
+.create_banner {
+  margin-left: 50px !important;
+}
+
+.list {
+  @include productListStyles;
+
+  .info {
+    display: flex;
+    div {
+      margin-right: 20px;
+    }
+  }
+  .btn {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.inp_box {
+  margin-bottom: 80px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img_box {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 150px;
+}
+
+.btn_create_edit {
+  margin: 50px auto !important;
+}

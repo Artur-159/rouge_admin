@@ -1,0 +1,56 @@
+@import "../../mixins";
+
+.faq {
+  max-width: 100%;
+  .create_faq_inputs_bnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    height: 420px;
+    gap: 25px;
+  }
+  .faq_text_editor {
+    width: 700px;
+
+    @media (max-width: 1300px) {
+      max-width: 550px;
+    }
+    @media (max-width: 1150px) {
+      max-width: 500px;
+    }
+    @media (max-width: 1080px) {
+      max-width: 450px;
+    }
+  }
+  .faq_question {
+    width: 350px;
+  }
+  .priority {
+    margin-bottom: 30px;
+  }
+  .btn_create {
+    display: flex;
+    margin: 20px auto 150px auto;
+  }
+}
+
+.question_list {
+  @include productListStyles;
+}
+
+.question_btn {
+  display: flex;
+  gap: 6px;
+}
+
+.question_info {
+  display: flex;
+
+  div {
+    margin-right: 20px;
+  }
+}
+.create_banner {
+  margin-left: 50px !important;
+}

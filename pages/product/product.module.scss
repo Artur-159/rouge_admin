@@ -1,0 +1,79 @@
+@import "../../mixins";
+
+.pagination {
+  margin-bottom: 60px;
+}
+
+.product_name {
+  margin: 25px 0 100px 0;
+}
+
+.checkbox_images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .check_box_group {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+
+    .checkbox {
+      display: flex;
+    }
+  }
+
+  .videos_images {
+    margin: 15px 0;
+  }
+}
+
+.product_details {
+  padding: 20px;
+  width: 90%;
+  margin-bottom: 100px;
+}
+
+.product_field {
+  padding: 10px 10px;
+  border-bottom: 1px solid grey;
+}
+
+.product_field strong {
+  color: #333;
+}
+
+.no_ellipsis .MuiDataGrid-columnHeaderTitle {
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+.centeredRow {
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  position: relative;
+  width: 400px;
+  margin: 10px 0;
+
+  .search_inp {
+    width: 100%;
+    padding-right: 40px;
+    margin-left: 40px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  .search_icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #1976d2;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+  }
+}

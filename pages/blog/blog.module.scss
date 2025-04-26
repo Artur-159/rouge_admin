@@ -1,0 +1,97 @@
+@import "../../mixins";
+
+.blog {
+  width: 100%;
+  .create_blog_inputs_bnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 400px;
+    margin-bottom: 30px;
+    gap: 20px;
+
+    .blog_name {
+      width: 270px;
+
+      @media (max-width: 1300px) {
+        max-width: 190px;
+      }
+    }
+    .blog_desc {
+      width: 500px;
+      height: 200px;
+
+      @media (max-width: 1520px) {
+        max-width: 450px;
+      }
+      @media (max-width: 1400px) {
+        max-width: 340px;
+      }
+      @media (max-width: 1110px) {
+        max-width: 280px;
+      }
+    }
+  }
+
+  .img_video_list_blog {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin-bottom: 150px;
+    gap: 20px;
+
+    @media (max-width: 1300px) {
+      width: 90%;
+    }
+
+    .blog_link {
+      justify-self: center;
+    }
+  }
+}
+
+.blog_list {
+  @include productListStyles;
+}
+
+.blog_btn {
+  display: flex;
+  gap: 6px;
+}
+
+.blog_info {
+  display: flex;
+  div {
+    margin-right: 20px;
+  }
+}
+.blog_short_desc {
+  width: 400px;
+  height: 150px;
+
+  @media (max-width: 1451px) {
+    max-width: 340px;
+  }
+
+  @media (max-width: 1230px) {
+    max-width: 250px;
+  }
+
+  @media (max-width: 1110px) {
+    max-width: 230px;
+  }
+}
+
+.create_blog {
+  .create_btn {
+    margin: 50px auto;
+    display: flex;
+  }
+}
+.create_banner {
+  margin-left: 50px !important;
+}

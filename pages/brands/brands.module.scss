@@ -1,0 +1,85 @@
+.box_inp {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  gap: 40px;
+
+  .brand_name {
+    width: 400px;
+
+    @media (max-width: 1170px) {
+      width: 290px;
+    }
+  }
+}
+
+.checkboxGroup {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.partner_img {
+  width: 550px;
+  margin-right: 45px;
+}
+.brands_bts {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 30%;
+}
+.brand_box {
+  width: 90%;
+
+  @media (max-width: 1500px) {
+    width: 100%;
+  }
+  .text_editor_desks {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    gap: 15px;
+    div {
+      width: 430px;
+
+      @media (max-width: 1550px) {
+        width: 99%;
+
+        div {
+          width: 99%;
+        }
+      }
+      @media (max-width: 1200px) {
+        width: 60%;
+      }
+    }
+  }
+  .images_box {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn {
+    display: flex;
+    margin: 120px auto 150px auto;
+  }
+}

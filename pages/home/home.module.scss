@@ -1,0 +1,50 @@
+@import "../../mixins";
+
+.home {
+  width: 100%;
+  margin-top: 40px;
+
+  &__banner__list {
+    @include productListStyles;
+
+    &__btn {
+      display: flex;
+      gap: 6px;
+    }
+  }
+
+  .home_button {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-bottom: 50px;
+  }
+  .element {
+    margin-top: 40px;
+  }
+  .btn {
+    margin-bottom: 200px;
+  }
+}
+
+.homeBanner_forms {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.homeBanner_forms_desc {
+  width: 700px;
+}
+
+.home_banner_inp {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  margin-bottom: 100px !important;
+}

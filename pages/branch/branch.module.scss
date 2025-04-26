@@ -1,0 +1,73 @@
+@import "../../mixins";
+
+.branch {
+  width: 100%;
+  .create_branch_inputs_bnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    gap: 20px;
+    .box {
+      margin-top: 50px;
+      margin-bottom: 125px;
+    }
+  }
+  .img_slc_inp {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 20px;
+    .branch_select {
+      width: 200px;
+    }
+  }
+  .partner_img {
+    margin-bottom: 100px;
+  }
+  .branch_text_editor {
+    width: 800px;
+  }
+  .branch_question {
+    width: 350px;
+  }
+  .priority {
+    margin-bottom: 30px;
+  }
+  .btn_create {
+    display: flex;
+    margin: 100px auto 150px auto;
+  }
+}
+
+.branches_list {
+  @include productListStyles;
+}
+
+.branches_btn {
+  display: flex;
+  gap: 6px;
+}
+.branches_info {
+  display: flex;
+  div {
+    margin-right: 20px;
+  }
+}
+
+.checkboxGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.create_banner {
+  margin-left: 50px !important;
+}
+
+.address_and_name_inp {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

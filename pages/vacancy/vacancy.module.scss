@@ -1,0 +1,43 @@
+@import "../../mixins";
+
+.vacancy {
+  width: 100%;
+  .create_vacancy_inputs_bnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    height: 420px;
+  }
+  .vacancy_text_editor {
+    width: 700px;
+  }
+  .vacancy_question {
+    width: 350px;
+  }
+  .priority {
+    margin-bottom: 30px;
+  }
+  .btn_create {
+    display: flex;
+    margin: 20px auto 150px auto;
+  }
+}
+
+.vacancy_list {
+  @include productListStyles;
+}
+
+.vacancy_btn {
+  display: flex;
+  gap: 6px;
+}
+.vacancy_info {
+  display: flex;
+  div {
+    margin-right: 20px;
+  }
+}
+.create_banner {
+  margin-left: 50px !important;
+}

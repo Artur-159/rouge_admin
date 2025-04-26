@@ -1,0 +1,52 @@
+@import "../../mixins";
+
+.service {
+  width: 100%;
+  .create_service_inputs_bnt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 420px;
+  }
+  .img_slc_inp {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .service_select {
+      width: 200px;
+    }
+  }
+  .service_text_editor {
+    width: 800px;
+  }
+  .service_question {
+    width: 350px;
+  }
+  .priority {
+    margin-bottom: 30px;
+  }
+  .btn_create {
+    display: flex;
+    margin: 20px auto 150px auto;
+  }
+}
+
+.service_list {
+  @include productListStyles;
+}
+
+.service_btn {
+  display: flex;
+  gap: 6px;
+}
+.service_info {
+  display: flex;
+  div {
+    margin-right: 20px;
+  }
+}
+.create_banner {
+  margin-left: 50px !important;
+}

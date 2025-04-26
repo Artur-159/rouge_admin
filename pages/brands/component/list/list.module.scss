@@ -1,0 +1,10 @@
+@import "../../../../mixins";
+
+.partner_item {
+  @include productListStyles;
+}
+
+.partner_btn {
+  display: flex;
+  gap: 6px;
+}
