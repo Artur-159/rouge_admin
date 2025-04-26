@@ -1,0 +1,15 @@
+.main_textarea{
+    padding: 20px; 
+}
+
+.main_textarea_error{
+    padding: 20px; 
+    border: 2px solid #d32f2f ; 
+    &:focus-visible{
+       border: 4px solid #d32f2f !important; 
+    }
+}
+
+.error{
+    color: #d32f2f;
+}

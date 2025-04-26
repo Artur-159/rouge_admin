@@ -1,0 +1,25 @@
+.banner {
+  .create_faq_inputs_bnt {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    gap: 20px;
+  }
+  .blog_name {
+    width: 250px;
+  }
+  .blog_desc {
+    width: 450px;
+    @media (max-width: 1110px) {
+      max-width: 400px;
+    }
+  }
+  .btn_create {
+    margin: 50px auto;
+    display: flex;
+  }
+  .btn_edit {
+    margin: 50px auto;
+    display: flex;
+  }
+}
